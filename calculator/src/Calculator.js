@@ -10,12 +10,18 @@ export default function Calculator (){
         setInput( prevInp=> prevInp+e);
     }
     const evaluateResult=()=>{
+        if(input===''){
+            setResult("Error")
+
+        }
+        else{
         try{
             const res=eval(input);
             setResult(res)
         }catch(e){
             setResult(e);
         }
+    }
     }
     const clearInput=()=>{
         setInput('');
