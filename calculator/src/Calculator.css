@@ -1,0 +1,9 @@
+.calc{
+    
+    align-items: center;
+    align-content: center;
+}
+button{
+    width: 43px;
+    height: 43px;
+}
